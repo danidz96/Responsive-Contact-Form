@@ -1,0 +1,152 @@
+/* BASE STYLES */
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #2D3945;
+}
+h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dd, p, figure, pre, table, fieldset, hr, textarea {
+    margin-bottom: 1rem;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%
+}
+label, .submit-btn {
+    cursor: pointer;
+}
+
+/* FONT STYLES */
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-grey {
+    color: #a1a1a1;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 19;
+    font-weight: normal;
+}
+
+/* Form Header */ 
+
+.form-header {
+    background: #2D3945;
+}
+
+.main-title {
+    padding: 10px;
+}
+
+/* Contact Form */
+
+.wrapper {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.horizontal-lines {
+    border-top: 4px solid #2D3945;
+    border-bottom: 2px solid #2D3945;
+    height: 10px;
+}
+
+.form-title {
+    margin-bottom: 30px;
+}
+
+.contact-label {
+    display: block;
+    margin: 15px 0;
+}
+
+.input, .select-state {
+    background: #EBECED;
+    padding: 15px;
+    width: 100%;
+    border: none;
+}
+
+.input:focus {
+    border: 1px solid #2D3945;
+    box-shadow: 0 0 5px #2D3945;
+}
+
+::-webkit-input-placeholder {
+    text-align: right;
+    font-style: italic;
+}
+
+.zip-code {
+    width: 40%;
+}
+
+.horizontal-line {
+    margin-top: 30px;
+    border: 2px solid #2D3945;
+}
+
+.newsletter-input-container {
+    margin-bottom: 10px;
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked,
+[type="radio"] {
+    width: 1.25em;
+    height: 1.25em;
+    border: 1px solid #2D3945;
+    background: #fff;
+    border-radius: 15px;
+}
+
+[type="checkbox"]:checked{
+    box-shadow:0px 0px 4px 2px #2d3945;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    background: #48aea5;
+    margin: 20px 0;
+}
+
+@media only screen and (min-width: 768px){
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .grid-container > div {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        margin: 20px 0;
+    }
+
+
+}

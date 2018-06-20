@@ -1,0 +1,159 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Code Review</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <!-- Start of page <header> -->
+
+    <header class="form-header text-center">
+        <div class="main-title">
+            <h1 class="text-white">The Code Review</h1>
+        </div>
+    </header>
+    <!-- End of <header> -->
+
+    <!-- Start of Contact form -->
+
+    <form class="wrapper" action="POST">
+        <h2 class="text-center">Signup for our newsletter</h2>
+        <p class="text-grey text-center">Get the latest news your code is doing right in your box.</p>
+        
+        <div class="horizontal-lines"></div>
+
+        <h2 class="form-title">Contact Information</h2>
+        <div class="grid-container">
+            <div class="form-input-container">
+                    <label class="text-grey contact-label" for="fullName">Full Name</label>
+                    <input id="fullName" class="input" type="text" name="fullName" placeholder="Required" required>
+            </div>
+            
+            <div class="form-input-container">
+                    <label class="text-grey contact-label" for="email">Email Address</label>
+                    <input id="email" class="input" type="email" name="email" placeholder="Required" required>
+            </div>
+            
+            <div class="form-input-container">
+                    <label class="text-grey contact-label" for="phone">Phone</label>
+                    <input id="phone" class="input" type="tel" name="phone">
+            </div>
+            
+            <div class="form-input-container">
+                    <label class="text-grey contact-label" for="street">Street Address</label>
+                    <input id="street" class="input" type="text" name="street" >
+            </div>
+            
+            <div class="form-input-container">
+                    <label class="text-grey contact-label" for="city">City</label>
+                    <input id="city" class="input" type="text" name="city">
+            </div>
+            
+            <div class="form-input-container">
+                <label class="text-grey contact-label" for="state">State</label>
+                <select name="state" class="select-state text-grey">
+                    <option selected disabled>Choose State</option>
+                    <option value="Alabama">AL</option>
+                    <option value="Alaska">AK</option>
+                    <option value="Arizona">AZ</option>
+                    <option value="Arkansas">AR</option>
+                    <option value="California">CA</option>
+                    <option value="Colorado">CO</option>
+                    <option value="Connecticut">CT</option>
+                    <option value="Delaware">DE</option>
+                    <option value="Florida">FL</option>
+                    <option value="Georgia">GA</option>
+                    <option value="Hawaii">HI</option>
+                    <option value="Idaho">ID</option>
+                    <option value="Illnois">IL</option>
+                    <option value="Indiana">IN</option>
+                    <option value="Iowa">IA</option>
+                    <option value="Kansas">KA</option>
+                    <option value="Kentucky">KY</option>
+                    <option value="Louisiana">LA</option>
+                    <option value="Maine">MA</option>
+                    <option value="Maryland">MD</option>
+                    <option value="Massachusetts">MA</option>
+                    <option value="Michigan">MI</option>
+                    <option value="Minnesota">MN</option>
+                    <option value="Mississippi">MI</option>
+                    <option value="Missouri">MO</option>
+                    <option value="Montana">MT</option>
+                    <option value="Nebraska">NE</option>
+                    <option value="Nevada">NV</option>
+                    <option value="New Jersey">NJ</option>
+                    <option value="New Mexico">NM</option>
+                    <option value="New York">NY</option>
+                    <option value="North Carolina">NC</option>
+                    <option value="North Dakota">ND</option>
+                    <option value="Ohio">OH</option>
+                    <option value="Oklahoma">OK</option>
+                    <option value="Oregon">OR</option>
+                    <option value="Pennsylvania">PA</option>
+                    <option value="Rhode Island">RI</option>
+                    <option value="South Carolina">SC</option>
+                    <option value="South Dakota">SD</option>
+                    <option value="Tennessee">TN</option>
+                    <option value="Texas">TX</option>
+                    <option value="Utah">UT</option>
+                    <option value="Vermont">VT</option>
+                    <option value="Virginia">VA</option>
+                    <option value="Washington">WA</option>
+                    <option value="Wisconsin">WI</option>
+                    <option value="Wyoming">WY</option>
+                </select>
+            </div>
+            
+            <div class="form-input-container">
+                    <label class=" text-grey contact-label" for="zip">Zip Code</label>
+                    <input id="zip" class="input zip-code" type="text" name="city">
+            </div>
+        </div>
+        <div class="horizontal-line"></div>
+
+        <h2 class="form-title">Newsletter</h2>
+        <p class="text-grey">Select the newsletters you would like to recieve</p>
+        
+        <div class="newsletter-input-container text-grey">
+            <label for="htmlNewsCheckbox"><input id="htmlNewsCheckbox" type="checkbox" name="newsletter" value="HTML News">   HTML News</label>
+        </div>
+        
+        <div class="newsletter-input-container text-grey">
+            <label for="cssNewCheckbox"><input id="cssNewCheckbox" type="checkbox" name="newsletter" value="CSS News">   CSS News</label>
+        </div>
+        
+        <div class="newsletter-input-container text-grey">
+            <label for="javascriptNewsCheckbox"><input id="javascriptNewsCheckbox" type="checkbox" name="newsletter" value="JavaScript News">   JavaScript News</label>
+        </div>
+        
+        <p class="text-grey">Newsletter format</p>
+
+        	<div class="newsletter-input-container radio">
+				<label for="htmlRadio"><input id="htmlRadio" type="radio" name="news-format" value="HTML">   HTML</label>
+			</div>
+
+			<div class="newsletter-input-container radio">
+				<label for="plainTextRadio"><input id="plainTextRadio" type="radio" name="news-format" value="Plain text">   Plain text</label>
+            </div>
+            
+        <p class="text-grey">Other topics you'd like to hear about</p>
+
+        <textarea class="input" name="comments"></textarea>
+
+        <button class="submit-btn text-white" type="submit" name="sign-up">Sign Up</button>
+
+    </form>
+
+    <footer class="form-footer text-center">
+        <p>Copyright&#64; The Code Review</p>
+	</footer>
+</body>
+
+</html>

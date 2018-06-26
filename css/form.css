@@ -27,6 +27,9 @@ label, .submit-btn {
     cursor: pointer;
 }
 
+input {
+    outline: none;
+}
 /* FONT STYLES */
 
 .text-center {
